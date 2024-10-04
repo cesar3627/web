@@ -1,0 +1,94 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo claro para el cuerpo */
+    color: #333; /* Color de texto */
+}
+
+/* Encabezado */
+header {
+    background-color: #007BFF; /* Color azul para el encabezado */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sección de información de habitaciones */
+.room-info {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Sección de formulario de reserva */
+.reservation-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+}
+
+label {
+    margin-bottom: 5px; /* Espaciado entre el label y el input */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    padding: 10px;
+    margin-bottom: 15px; /* Espaciado entre inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF; /* Color del botón */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* Color de fondo del footer */
+    color: white; /* Color del texto en el footer */
+    position: relative; /* Asegura que el footer esté en la parte inferior */
+    bottom: 0;
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+}
+
+@media (max-width: 600px) {
+    header, .room-info, .reservation-form {
+        padding: 15px; /* Reducir el padding en dispositivos móviles */
+    }
+
+    input[type="submit"] {
+        font-size: 14px; /* Texto más pequeño en el botón */
+    }
+}
